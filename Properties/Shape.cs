@@ -16,7 +16,7 @@ namespace Properties
 
     }
 
-    public class Circle
+    public class Circle:Shape
     {
         private double radius;
 
@@ -27,9 +27,12 @@ namespace Properties
                 radius = value; }
         }
 
-        public Circle(int r) { Radius = r; }
-        public double Area() { return Math.Pow(Radius,2)*Math.PI; }
-        public double Perimeter() { return 2*Math.PI*Radius; }
+        public Circle(int r) : base("Circle")
+        {
+            Radius= r;
+        }
+        public override double Area() { return Math.Pow(Radius,2)*Math.PI; }
+        public override double Perimeter() { return 2*Math.PI*Radius; }
 
     }
     //Gooday Mate
