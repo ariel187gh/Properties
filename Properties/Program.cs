@@ -15,11 +15,12 @@
             shapes[0] = rec;
             shapes[1] = sq;
             shapes[2] = cir;
-            shapes[3] = new Rectangle(6, 2, "rec1");
+            shapes[3] = new Rectangle(6, 2,"Tusik");
             foreach(Shape s in shapes)
             {
                 if (s!=null)
                 {
+                    Console.WriteLine(s.Name);
                     Console.WriteLine(s.Area());
                     //if (s is Circle)
                     //{

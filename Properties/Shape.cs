@@ -54,7 +54,7 @@ namespace Properties
             set { if(value>0)
                     width = value; }
         }
-        public Rectangle(double length,double width, string name):base("Rectangle")
+        public Rectangle(double length,double width, string name="Rectangle"):base(name)
         {
             Length=length;
             Width = width;
